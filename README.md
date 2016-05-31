@@ -20,3 +20,4 @@ Example inputs are provided in the pre-commit.bat
 - To use no-dependency at all, I didn't use any REST client and aldo didn't use a JSON object handler (made String operations instead).  It may be modified to use a REST client and also a JSON object handler.
 - It also makes a Basic authentication. Thus, passwords may be visible through the network.
 - Because I had problem during git push and it reset all my local files, I recovered from Eclipse local history. Thus, there may be some mistakes in the code (it compiles, I checked :))
+- Because 'resolution is EMPTY' returns no results in my JIRA installation, resolutiondate is used instead
