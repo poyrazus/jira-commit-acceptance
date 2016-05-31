@@ -19,3 +19,4 @@ Example inputs are provided in the pre-commit.bat
 - I used java 8, thus you need java 8 to build and run this project (Infact, just a single line uses java 8 which have *String.join* method in it). 
 - To use no-dependency at all, I didn't use any REST client and aldo didn't use a JSON object handler (made String operations instead).  It may be modified to use a REST client and also a JSON object handler.
 - It also makes a Basic authentication. Thus, passwords may be visible through the network.
+- Because I had problem during git push and it reset all my local files, I recovered from Eclipse local history. Thus, there may be some mistakes in the code (it compiles, I checked :))
