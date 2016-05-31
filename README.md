@@ -3,7 +3,7 @@ Require SVN commits have commit messages. Also, these commit messages must have 
 
 I was using Commit Acceptance Plugin for JIRA (till JIRA version 7) as SVN precommit hook. But when upgraded to JIRA 7, learned that Commit Acceptance plugin is no longer supported (because XML-RPC API is dropped in JIRA). Instead, there is a commercial version (using REST API). So, I wanted to create my own hook script.
 
-To use this hook, first build the project using maven. Then, go to SVN repository folder (you must have access to the original repository, not the working copy). Put *pre-commit.bat* and **jira-commit-acceptance.jar** (generated via maven build) under the hooks folder.
+To use this hook, first build the project using maven. Then, go to SVN repository folder (you must have access to the original repository, not the working copy). Put **pre-commit.bat** and **jira-commit-acceptance.jar** (generated via maven build) under the hooks folder.
 In the pre-commit.bat, set the parameters accordingly (All must be filled). The parameters are:
 - **java-exe** Path to java executable in your system (java 8 is required)
 - **svnlook-path** Path to svnlook.exe file (Required to make svn queries to get the committer name and commit log) 
