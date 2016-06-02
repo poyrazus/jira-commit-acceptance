@@ -46,9 +46,7 @@ public class JiraCommentChecker {
 
 		query.append(String.join(",", issueList)).append(")");
 		if (this.issuesMustBeUnresolved) {
-			// because 'resolution is EMPTY' returns no results in my JIRA
-			// installation, resolutiondate is used instead
-			query.append("and (resolutiondate is EMPTY)");
+			query.append("and (resolution=Unresolved)");
 		}
 		query.append("&fields=id,key");
 
